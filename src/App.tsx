@@ -8,7 +8,8 @@ export const App = () => {
   const data = {
     name: 'Tatum\'s Small Engine Repair',
     ph_number: 6012496177,
-    address: 'Douglasville, GA', // TBD: Add full address
+    address: '5557 big A rd Douglasville, GA 30135', // TBD: Add full address,
+    email: 'tatumsmallengine@gmail.com'
   }
   function formatPhoneNumber(phone: string | number): string | null {
   // Remove all non-digit characters
@@ -223,11 +224,11 @@ export const App = () => {
                   <div className="space-y-2 text-muted-foreground">
                     <div className="flex justify-between gap-8">
                       <span>Monday - Friday:</span>
-                      <span>8:00 AM - 6:00 PM</span>
+                      <span>8:00 AM - 5:30 PM</span>
                     </div>
                     <div className="flex justify-between gap-8">
                       <span>Saturday:</span>
-                      <span>9:00 AM - 3:00 PM</span>
+                      <span>8:00 AM - 3:00 PM</span>
                     </div>
                     <div className="flex justify-between gap-8">
                       <span>Sunday:</span>
