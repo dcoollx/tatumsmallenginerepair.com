@@ -8,7 +8,9 @@ export const App = () => {
   const data = {
     name: 'Tatum\'s Small Engine Repair',
     ph_number: 6012496177,
-    address: '5557 big A rd Douglasville, GA 30135', // TBD: Add full address,
+    ph_number_alt: 4704211312,
+    address: '5557 Big A Road Douglasville, GA 30135',
+    mapLink: 'https://www.google.com/maps/place/5557+Big+A+Rd,+Douglasville,+GA+30135/@33.6535556,-84.7955664,17z/data=!3m1!4b1!4m6!3m5!1s0x88f4d7981fe3bb73:0x3ff5701e939c38ea!8m2!3d33.6535512!4d-84.7929915!16s%2Fg%2F11r49fvr97?entry=ttu&g_ep=EgoyMDI2MDQwMS4wIKXMDSoASAFQAw%3D%3D', 
     email: 'tatumsmallengine@gmail.com'
   }
   function formatPhoneNumber(phone: string | number): string | null {
@@ -195,24 +197,30 @@ export const App = () => {
                 <Phone className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
                 <div>
                   <h3 className="text-lg mb-1">Phone</h3>
-                  <p className="text-muted-foreground">{formatPhoneNumber(data.ph_number)}</p>
+                  <a href={`tel:${data.ph_number}`} className="text-muted-foreground hover:underline">
+                    {formatPhoneNumber(data.ph_number)}
+                  </a>
+                  <a href={`tel:${data.ph_number_alt}`} className="text-muted-foreground hover:underline">
+                   {' '} ALT: {formatPhoneNumber(data.ph_number_alt)}
+                  </a>
                 </div>
               </div>
               <div className="flex items-start gap-4">
                 <Mail className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
                 <div>
                   <h3 className="text-lg mb-1">Email</h3>
-                  <p className="text-muted-foreground">info@tatumsenginerepair.com</p>
+                  <a href={`mailto:${data.email}`} className="text-muted-foreground hover:underline">
+                    {data.email}
+                  </a>
                 </div>
               </div>
               <div className="flex items-start gap-4">
                 <MapPin className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
                 <div>
                   <h3 className="text-lg mb-1">Address</h3>
-                  <p className="text-muted-foreground">
-                   TBD<br />
-                    Winston GA, 30135
-                  </p>
+                  <a href={data.mapLink} className="text-muted-foreground">
+                   {data.address}
+                  </a>
                 </div>
               </div>
             </div>
