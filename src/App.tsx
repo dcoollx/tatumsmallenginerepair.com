@@ -28,14 +28,9 @@ export const App = () => {
 }
   const galleryImages = [
     {
-      url: 'https://images.unsplash.com/photo-1762604462421-fff920b0c418?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwyfHxzbWFsbCUyMGVuZ2luZSUyMHJlcGFpciUyMHRvb2xzJTIwd29ya3Nob3B8ZW58MXx8fHwxNzc1MjM0MzczfDA&ixlib=rb-4.1.0&q=80&w=1080',
-      alt: 'Tools and oil bottles in workshop',
+      url: 'https://images.unsplash.com/photo-1689728071264-2645c8664f0d?q=80&w=1744&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      alt: '',
       photographer: 'Kenny Letsoin'
-    },
-    {
-      url: 'https://images.unsplash.com/photo-1615467517177-3157c0cd7ff5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsYXduJTIwbW93ZXIlMjByZXBhaXIlMjBtZWNoYW5pY3xlbnwxfHx8fDE3NzUyMzQzNzR8MA&ixlib=rb-4.1.0&q=80&w=1080',
-      alt: 'Mechanic with repair tools',
-      photographer: 'aranprime'
     },
     {
       url: 'https://images.unsplash.com/photo-1637640125496-31852f042a60?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZWNoYW5pYyUyMHdvcmtzaG9wJTIwZ2FyYWdlfGVufDF8fHx8MTc3NTIzNDM3NHww&ixlib=rb-4.1.0&q=80&w=1080',
