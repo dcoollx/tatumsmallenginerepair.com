@@ -209,8 +209,8 @@ export const App = () => {
                 <div>
                   <h3 className="text-lg mb-1">Address</h3>
                   <p className="text-muted-foreground">
-                    123 Main Street<br />
-                    Springfield, IL 62701
+                   TBD<br />
+                    Winston GA, 30135
                   </p>
                 </div>
               </div>
