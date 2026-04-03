@@ -1,7 +1,7 @@
 import { Wrench, Phone, Mail, MapPin, Clock, Settings } from 'lucide-react';
 import Slider, { type Settings as SliderSettings } from 'react-slick';
 import { ImageWithFallback } from './components/ImageWithFallback';
-import { Logo } from './components/logo';
+import { Logo } from './components/Logo';
 
 export const App = () => {
 

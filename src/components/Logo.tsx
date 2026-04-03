@@ -1,7 +1,7 @@
 import React from "react"
 
-export const Logo = ( intrinsicProps: React.SVGProps<SVGSVGElement>) => (
-<svg {...intrinsicProps}  viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+export const Logo = (props: React.SVGProps<SVGSVGElement>) => (
+<svg {...props}  viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <mask id="cut">
       <rect width="512" height="512" fill="white"/>
