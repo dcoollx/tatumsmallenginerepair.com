@@ -1,7 +1,8 @@
 import { Wrench, Phone, Mail, MapPin, Clock, Settings } from 'lucide-react';
-import Slider, { type Settings as SliderSettings } from 'react-slick';
 import { ImageWithFallback } from './components/ImageWithFallback';
 import { Logo } from './components/Logo';
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
 
 export const App = () => {
 
@@ -53,31 +54,6 @@ export const App = () => {
     }
   ];
 
-  const carouselSettings: SliderSettings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1
-        }
-      },
-      {
-        breakpoint: 640,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
-  };
 
   const services = [
     {
@@ -171,7 +147,8 @@ export const App = () => {
       <section className="py-16 px-4 bg-accent">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl text-center mb-12">Our Workshop</h2>
-          {/* <Slider {...carouselSettings}>
+          <h3 className=" text-center mb-12">ALL MAKES ALL MODELS</h3>
+          <Carousel showThumbs={false} autoPlay={true} infiniteLoop={true} interval={7000}>
             {galleryImages.map((image, index) => (
               <div key={index} className="px-2">
                 <div className="relative h-80 rounded-lg overflow-hidden shadow-lg">
@@ -183,7 +160,7 @@ export const App = () => {
                 </div>
               </div>
             ))}
-          </Slider> */}
+            </Carousel>
         </div>
       </section>
 
